@@ -1,0 +1,12 @@
+python -m pytest --help get all the argument with their instruction
+python -m pytest --verbose  display the test result in detail, with the percentage, result of the particular case
+python -m pytest --quiet an abstracted version of result summary
+python -m pytest --exitfirst will stop when a test is invalid
+python -m pytest --maxfail=1 set the amount of fail test case generated before the test process terminate
+python -m pytest --junit-xml report.xml export the test result in xml file format
+python -m pytest tests/test_accum.py only run test script in test_accum.py instead of the whole project
+python -m pytest tests/test_math.py::test_one_plus_one invoke a specific test method
+python -m pytest -k one search all test method that contain "one" in the method name
+python -m pytest -k "one and not dd" search all the test method that contain "one" without "dd" in the name
+python -m pytest -m math run the test with the marker math. Marker can be assigned to each method. Every markers should be listed in the pytest.ini
+
